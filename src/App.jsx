@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import FeaturesSection from "./components/FeaturesSection";
 import CardDemo from "./components/AnimatedLogoCard";
+import FooterSection from './components/FooterSection';
 
 import { useEffect } from "react";
 
@@ -19,6 +20,7 @@ export default function App() {
       <Hero/>
       <FeaturesSection/>
       <CardDemo/>
+      <FooterSection/>
 
       {/* Footer */}
     </main>

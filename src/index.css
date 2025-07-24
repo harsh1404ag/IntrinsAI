@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 1. Define the custom Azonix font */
+@font-face {
+  font-family: 'Azonix';
+  /* This path assumes your font file is named 'Azonix.otf' and is in the /public folder */
+  src: url('/Azonix.otf') format('opentype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+@layer base {
+  body {
+    @apply bg-black text-white relative h-screen overflow-x-hidden;
+    /* 2. Apply the custom font to the whole site */
+    font-family: 'Azonix', sans-serif; /* Use Azonix as the primary font, with sans-serif as a fallback */
+  }
+}

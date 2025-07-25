@@ -34,5 +34,5 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
-          app_location: "/"            # Your source root
-          output_location: "dist"      # Your Vite build output
+          app_location: "/"            # root directory of your app
+          output_location: "dist"      # where vite builds to

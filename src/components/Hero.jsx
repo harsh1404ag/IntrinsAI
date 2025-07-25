@@ -15,23 +15,23 @@ const Hero = () => {
 
           {/* main heading */}
           <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-wider my-8'>
-              EMAIL FOR 
-              <br/>DEVELOPERS 
+              BEYOND FITNESS.  
+              <br/>BEFORE SICKNESS.
           </h1>
 
           {/* description */}
           <p className='text-base sm:text-lg tracking-wider text-grey-400 max-w-[25rem] lg:max-w-[30rem]'>
-              the best way to reach your customers.
+              We use AI to detect the invisible signals of disease, years in advance.
           </p>
 
           {/* Button */}
           <div className='flex gap-4 mt-12'>
               <a className='border border-[#2a2a2a] py-2 sm:py-3 px-4 sm:px-5 rounded-full sm:text-lg text-sm font-semibold tracking-wider transition-all duration-300 hover:bg-[#1a1a1a]' href="#">
-                  Documentation <i className='bx bx-link-external'></i>
+                  OUR MISSION <i className='bx bx-link-external'></i>
               </a>
 
                <a className='border border-[#2a2a2a] py-2 sm:py-3 px-8 sm:px-10 rounded-full sm:text-lg text-sm font-semibold tracking-wider transition-all duration-300 hover:bg-[#1a1a1a] bg-gray-300 text-black hover:text-white' href="#">
-                  Get Started <i className='bx bx-link-external'></i>
+                  TRY TRAINORA <i className='bx bx-link-external'></i>
                </a>
           </div>
           {/* 3D robot image */}

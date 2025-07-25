@@ -10,10 +10,9 @@ export function CardDemo() {
       <CardSkeletonContainer>
         <Skeleton />
       </CardSkeletonContainer>
-      <CardTitle>Damn good card</CardTitle>
+      <CardTitle>BUILT WITH THE BEST</CardTitle>
       <CardDescription>
-        A card that showcases a set of tools that you use to create your
-        product.
+        Our platform is built on a foundation of cutting-edge technologies, ensuring reliability, security, and performance at scale.
       </CardDescription>
     </Card>
   );

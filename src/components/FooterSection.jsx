@@ -1,5 +1,6 @@
 import React from 'react';
 
+// --- Social Media Icons (No changes here) ---
 const TwitterIcon = () => (
     <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
         <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
@@ -18,34 +19,49 @@ const LinkedInIcon = () => (
     </svg>
 );
 
+// --- Microsoft for Startups SVG Logo Component ---
+const MicrosoftStartupsLogo = ({ className }) => (
+    <div className={`flex items-center space-x-2 ${className}`}>
+        <svg className="h-5 w-5" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1H9.5V9.5H1V1Z" fill="#F25022"/>
+            <path d="M11.5 1H20V9.5H11.5V1Z" fill="#7FBA00"/>
+            <path d="M1 11.5H9.5V20H1V11.5Z" fill="#00A4EF"/>
+            <path d="M11.5 11.5H20V20H11.5V11.5Z" fill="#FFB900"/>
+        </svg>
+        <span className="font-semibold text-white">Microsoft for Startups</span>
+    </div>
+);
 
-// --- Partnership Section Component ---
+
+// --- Partnership Section Component (No changes here) ---
 const PartnershipSection = () => {
     return (
         <section className="bg-black py-12 sm:py-16">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl lg:max-w-none">
                     <h2 className="text-center text-lg font-semibold leading-8 text-white">
-                        In partnership with the world's leading technology innovators
+                        Backed by the world's leading technology innovators
                     </h2>
-                    <div className="mx-auto mt-10 grid grid-cols-1 items-center gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-2">
+                    <div className="mx-auto mt-10 grid grid-cols-1 items-center gap-x-8 gap-y-12 sm:grid-cols-3 lg:grid-cols-3">
                         {/* NVIDIA Inception Logo */}
                         <div className="flex justify-center">
                             <img
-                                className="h-12 w-auto"
-                                src="https://placehold.co/400x100/000000/FFFFFF?text=NVIDIA+INCEPTION"
+                                className="h-10 w-auto"
+                                src="/nvidia-inception-logo.png"
                                 alt="NVIDIA Inception"
-                                onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/200x50/000000/FFFFFF?text=Logo+Not+Found'; }}
+                            />
+                        </div>
+                        {/* AWS for Startups Logo */}
+                        <div className="flex justify-center">
+                            <img
+                                className="h-10 w-auto"
+                                src="/aws-startups-logo.png"
+                                alt="AWS for Startups"
                             />
                         </div>
                         {/* Microsoft for Startups Logo */}
                         <div className="flex justify-center">
-                            <img
-                                className="h-12 w-auto"
-                                src="https://placehold.co/400x100/000000/FFFFFF?text=Microsoft+for+Startups"
-                                alt="Microsoft for Startups"
-                                onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/200x50/000000/FFFFFF?text=Logo+Not+Found'; }}
-                            />
+                             <MicrosoftStartupsLogo className="h-10" />
                         </div>
                     </div>
                 </div>
@@ -56,18 +72,19 @@ const PartnershipSection = () => {
 
 // --- Main Footer Component ---
 const SiteFooter = () => {
+    // --- UPDATED CONTENT FOR AURA HEALTH ---
     const linkSections = [
         {
             title: 'Product',
-            links: ['Features', 'Pricing', 'Integrations', 'API'],
+            links: ['Our Technology', 'Trainora App', 'For Researchers'],
         },
         {
             title: 'Company',
-            links: ['About Us', 'Careers', 'Blog', 'Contact'],
+            links: ['Our Mission', 'Careers', 'Blog'],
         },
         {
             title: 'Resources',
-            links: ['Documentation', 'Support', 'Case Studies', 'Whitepapers'],
+            links: ['The Science', 'FAQ & Support', 'Digital Biomarkers'],
         },
         {
             title: 'Legal',
@@ -82,12 +99,12 @@ const SiteFooter = () => {
                     <div className="col-span-2 md:col-span-4 lg:col-span-1">
                         <a href="#" className="flex items-center space-x-2">
                             <svg className="h-8 w-8 text-cyan-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
-                               <path strokeLinecap="round" strokeLinejoin="round" d="M12 18.375a9.375 9.375 0 100-18.75 9.375 9.375 0 000 18.75zm0-8.625a1.125 1.125 0 110-2.25 1.125 1.125 0 010 2.25zM12 14.625a1.125 1.125 0 110-2.25 1.125 1.125 0 010 2.25z" />
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M12 18.375a9.375 9.375 0 100-18.75 9.375 9.375 0 000 18.75zm0-8.625a1.125 1.125 0 110-2.25 1.125 1.125 0 010 2.25zM12 14.625a1.125 1.125 0 110-2.25 1.125 1.125 0 010 2.25z" />
                             </svg>
                             <span className="text-xl font-bold">IntrinsAI</span>
                         </a>
                         <p className="mt-4 text-sm text-neutral-300">
-                            Powering the next generation of intelligent applications.
+                            Building the future of proactive health.
                         </p>
                     </div>
 
@@ -123,21 +140,15 @@ const SiteFooter = () => {
 
 // --- Main App Component (for demonstration) ---
 export default function App() {
-  return (
-    <div className="bg-black min-h-screen flex flex-col">
-      {/* This is where your main page content goes.
-        The `flex-grow` class will make this container take up all 
-        available space, pushing the footer down.
-      */}
-      <main className="flex-grow">
-        {/* For example, you can place your CardDemo component here */}
-        {/* <CardDemo /> */}
-        {/* The temporary spacer div has been removed. */}
-      </main>
+    return (
+        <div className="bg-black min-h-screen flex flex-col">
+            <main className="flex-grow">
+                {/* Your main page content goes here */}
+            </main>
 
-      {/* Render the sections at the bottom */}
-      <PartnershipSection />
-      <SiteFooter />
-    </div>
-  );
+            {/* Render the sections at the bottom */}
+            <PartnershipSection />
+            <SiteFooter />
+        </div>
+    );
 }

@@ -13,48 +13,48 @@ import {
 export function FeaturesSection() {
   const features = [
     {
-      title: "Built for developers",
+      title: "AI AT THE CORE",
       description:
-        "Built for engineers, developers, dreamers, thinkers and doers.",
+        "A sophisticated AI built from the ground up to understand human physiology.",
       icon: <IconTerminal2 />,
     },
     {
-      title: "Ease of use",
+      title: "EFFORTLESS & AMBIENT",
       description:
-        "It's as easy as using an Apple, and as expensive as buying one.",
+        "Works silently in the background of your life. No manual logging required.",
       icon: <IconEaseInOut />,
     },
     {
-      title: "Pricing like no other",
+      title: "AN INVESTMENT IN YOU",
       description:
-        "Our prices are best in the market. No cap, no lock, no credit card required.",
+        "A simple subscription for proactive health. Peace of mind that pays for itself.",
       icon: <IconCurrencyDollar />,
     },
     {
-      title: "100% Uptime guarantee",
-      description: "We just cannot be taken down by anyone.",
+      title: "PRIVATE BY DESIGN",
+      description: "Bank-grade security and absolute privacy. Your data is yours, always.",
       icon: <IconCloud />,
     },
     {
-      title: "Multi-tenant Architecture",
-      description: "You can simply share passwords instead of buying new seats",
+      title: "MULTI-MODAL ENGINE",
+      description: "Fuses data from your voice, motion, and sleep to see the complete picture.",
       icon: <IconRouteAltLeft />,
     },
     {
-      title: "24/7 Customer Support",
+      title: "GUIDANCE, NOT JUST GRAPHS",
       description:
-        "We are available a 100% of the time. Atleast our AI Agents are.",
+        "Clear insights to empower proactive conversations with your doctor.",
       icon: <IconHelp />,
     },
     {
-      title: "Money back guarantee",
+      title: "OUR COMMITMENT",
       description:
-        "If you donot like EveryAI, we will convince you to like us.",
+        "Relentlessly committed to empowering you to live a longer, healthier life.",
       icon: <IconAdjustmentsBolt />,
     },
     {
-      title: "And everything else",
-      description: "I just ran out of copy ideas. Accept my sincere apologies",
+      title: "FOR WHAT MATTERS MOST",
+      description: "More time with the people you love. That's the mission.",
       icon: <IconHeart />,
     },
   ];
